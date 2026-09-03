@@ -9,6 +9,7 @@ export default defineConfig({
         target: 'http://localhost:8080',
         changeOrigin: true,
       }
-    }
+    },
+    base:process.env.VITE_BASE_URL || '/car-rental-frontend-app',
   }
 })
